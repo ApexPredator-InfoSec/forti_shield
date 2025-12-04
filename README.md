@@ -7,4 +7,5 @@ CVE-2021-31955 POC from freeide was modified to leak the EPROCESS of the exploit
 
 Morten and Sickness's POC for CVE-2015-4077 and CVE-2015-5736 was then modifeid to work with 20H2 https://www.exploit-db.com/exploits/45149
 
-<img width="1900" height="1126" alt="image" src="https://github.com/user-attachments/assets/00428b86-43d6-4466-9b81-cf4737b540b9" />
+<img width="2108" height="838" alt="image" src="https://github.com/user-attachments/assets/f3f4eb77-f597-4517-8a9e-fa1a65809ec4" />
+
